@@ -1,45 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ID Travel Agent</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel With me</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
+  </head>
+  <body>
+    <!-- HEADER START -->
     <header>
-        <section class="navigation-header">
-            <img src="asets/a32f81155cd0d4f16d36aef74f7d2644.webp"class="logo" width="48" height="48" >
-            <nav class="navigation">
-                <a href=""> Home</a>
-                <a href=""> Out Package</a>
-                <a href=""> Call us</a>
-            </nav>
-        </section>
-        <section class="title-header">
-            <h1>You best travel agent</h1>
-            <h4>You happines is ours happines</h4>
-        </section>
+      <section class="navigation-header">
+        <nav class="navigation">
+          <div id="navbar">
+            <img
+              class="logo-navbar"
+              src="asets/logo.jpg"
+              width="50"
+              height="50"
+            />
+            <a href="">Home</a>
+            <a href="">Our Package</a>
+            <a href="">Call Us</a>
+          </div>
+        </nav>
+      </section>
+      <section class="title-header">
+        <h1>Your Trusted Travel Agent</h1>
+        <h5>~~Your happiness is our happiness~~</h5>
+      </section>
     </header>
+    <!-- HEADER END -->
 
+    <!-- MAIN START -->
     <main id="main-section">
+      <div class="div-main">
         <section class="review-section">
-            <img src="asets/ama-dablam-mountain-peak-view-from-chola-pass-royalty-free-image-1623254695.jpg">
-            <h5> I like  to go this mountain using ID Travel Agent</h5>
+          <img src="asets/swedia.jpg" class="img-slideshow" />
+          <img src="asets/arabsaudi.jpg" class="img-slideshow" />
+          <img src="asets/singapore.webp" class="img-slideshow" />
+          <div class="button-img">
+            <button onclick="plusDivs(-1)" class="button-img1"><</button>
+            <button onclick="plusDivs(1)" class="button-img2">></button>
+          </div>
+          <i
+            ><h4 class="h4-review">
+              "Liburan tidak pusing memikrikan biaya? Yuk, Liburan Bersama Kita"
+            </h4></i
+          >
         </section>
-        <section class="message-us">
-            <h5>Contatc Us</h5>
-            <h6>Sales akan menghubungi anda</h6>
-            <form class="input-message-us">
-                <label for="name-input">First Name</label>
-                <input id="name-input"   type="text" placeholder="First And Last Name">
-                <label for="email-input">Email</label>
-                <input id="email-input"   type="text" placeholder="example@gmail.com">
-                <button type="button" class="primary-button"> Submit</button>
-            </form>
-        </section>
-    </main>
 
-    
-</body>
+        <section class="message-us">
+          <b><h2 class="h2-message">Contact Us!</h2></b>
+          <h5 class="h5-message">
+            Sales kami akan menghubungi anda 1x24 jam setelah data kami terima.
+          </h5>
+          <form action="" class="input-message-us">
+            <b><label for="name-input">Your Name:</label></b>
+            <input
+              id="name-input"
+              type="text"
+              placeholder="First and Last Name"
+              class="name-input"
+            />
+            <br />
+
+            <b><label for="email-input">Email Address:</label></b>
+            <input
+              id="email-input"
+              type="text"
+              placeholder="example@mail.com"
+              class="email-input"
+            />
+            <br />
+
+            <label>
+              <b>What you interested in?</b><br />
+              <select class="option-select">
+                <option value="" disabled selected hidden class="option-select">
+                  Select option
+                </option>
+                <option value="Bali" style="color: black">Swedia</option>
+                <option value="Raja ampat" style="color: black">
+                  Singapore
+                </option>
+                <option value="Maldives" style="color: black">
+                  Saudia Arabia
+                </option>
+              </select>
+            </label>
+            <br />
+            <button type="button" class="send-button">SEND</button>
+          </form>
+        </section>
+      </div>
+      <br />
+      <section class="people">
+        <img src="asets/123.png" width="45" height="45" />
+        <h5 class="h5-people">M.Rizky Anugrah Robby</h5>
+        <i><h6 class="h6-people">Mahasiswa, 20</h6></i>
+      </section>
+
+      <div class="div-promo">
+        <section class="promo">
+          <h2>Yuk Daftar dan dapatkan promo dengan gratis!!!</h2>
+          <img src="asets/promotiket1.webp" class="img-promo1" />
+          <img src="asets/promotiket2.png" class="img-promo2" />
+          <img src="asets/promotiket3.jpg" class="img-promo3" />
+          <img src="asets/promotiket4.webp" class="img-promo4" />
+        </section>
+      </div>
+
+      <section>
+        <div class="container-page1">
+          <h1>OUR PACKAGE</h1>
+        </div>
+      </section>
+      <div class="div-package">
+        <section class="package">
+          <h4>KOREA</h4>
+        </section>
+        <section class="package2">
+          <h4>AUSTRALIA</h4>
+        </section>
+        <section class="package3">
+          <h4>DEPOK</h4>
+        </section>
+        <section class="package4">
+          <h4>USA</h4>
+        </section>
+        <section class="package5">
+          <h4>GREENLAND</h4>
+        </section>
+      </div>
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <h1>--YOUR HAPPINESS IS OUR HAPPINESS, HAPPY TRAVEL!--</h1>
+      <button type="button" class="footer-button">CALL TO ACTION</button>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
